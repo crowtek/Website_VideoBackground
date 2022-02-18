@@ -1,0 +1,49 @@
+@use "../util" as *;
+
+.frontpage {
+  min-height: 100vh;
+  min-width: 100%;
+  h1 {
+    position: relative;
+    z-index: 2;
+    font-size: 100px;
+    padding: 40px;
+    @include breakpoint-down(medium) {
+      font-size: 80px;
+    }
+  }
+}
+
+#myVideo {
+  position: relative;
+  z-index: -1;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.FrontBody {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  min-width: 100%;
+  min-height: 70vh;
+  padding: 100px;
+  @include breakpoint-down(small) {
+    min-height: 50vh;
+    padding: 50px;
+  }
+}
+#playButton {
+  position: relative;
+  z-index: 2;
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+  height: 100px;
+  background-color: rgb(36, 23, 3);
+  color: white;
+  font-size: 24px;
+}

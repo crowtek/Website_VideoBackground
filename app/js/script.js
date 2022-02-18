@@ -1,5 +1,16 @@
-console.log('HELLO');
+// Get the video
+var video = document.getElementById("myVideo");
 
-const test = () => {
-	console.log('this is a test');
-};
+// Get the button
+var btn = document.getElementById("playButton");
+
+// Pause and play the video, and change the button text
+function vidFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
