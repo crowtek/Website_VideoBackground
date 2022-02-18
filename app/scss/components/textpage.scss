@@ -1,9 +1,108 @@
 @use "../util" as *;
 
 .textpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   min-height: 100vh;
   min-width: 100%;
   background-color: rgb(25, 51, 75);
+}
+
+.textpage-body {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  min-width: 80%;
+  max-width: 80%;
+  min-height: 80vh;
+  border-radius: 20px;
+  background-color: rgb(196, 196, 196);
+}
+.text-topleft {
+  grid-column: 1;
+  grid-row: 1;
+  padding: 50px;
+  @include breakpoint-down(large) {
+    padding: 30px;
+  }
+  @include breakpoint-down(small) {
+    grid-column: 1 /3;
+  }
+  h1 {
+    font-size: 28px;
+    @include breakpoint-down(large) {
+      font-size: 20px;
+    }
+  }
+  p {
+    font-size: 20px;
+    @include breakpoint-down(large) {
+      font-size: 18px;
+    }
+  }
+}
+.text-topright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 2;
+  grid-row: 1;
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+  img {
+    border-radius: 20px;
+    width: 70%;
+  }
+}
+.text-botleft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1;
+  grid-row: 2;
+  @include breakpoint-down(medium) {
+    padding: 20px;
+    align-items: flex-end;
+  }
+  @include breakpoint-down(small) {
+    grid-column: 1 /3;
+  }
+  img {
+    border-radius: 20px;
+    width: 70%;
+    @include breakpoint-down(medium) {
+      width: 100%;
+    }
+  }
+}
+
+.text-botright {
+  grid-column: 2;
+  grid-row: 2;
+  padding: 50px;
+  @include breakpoint-down(large) {
+    padding: 30px;
+  }
+  @include breakpoint-down(medium) {
+    grid-row: 1/3;
+  }
+  @include breakpoint-down(small) {
+    display: none;
+  }
+  h1 {
+    font-size: 28px;
+    @include breakpoint-down(large) {
+      font-size: 20px;
+    }
+  }
+  p {
+    font-size: 20px;
+    @include breakpoint-down(large) {
+      font-size: 18px;
+    }
+  }
 }
