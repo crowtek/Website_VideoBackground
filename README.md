@@ -47,7 +47,7 @@ I made this project Mobile First and made it fully responsive with Flexbox, Grid
 <!-- CONTACT -->
 ## Contact
 
-Meik Grünholz -  prt3@hotmail.de
+Meik Grünholz -  prt3@hotmail.de 
 
 <br>
 
