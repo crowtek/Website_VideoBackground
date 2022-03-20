@@ -33,7 +33,7 @@ went more into Sass featuresand replaced media querys with reusable variables. <
 
 
 * [Sass](https://sass-lang.com/)
-* [javaScript](https://developer.mozilla.org/de/docs/Web/JavaScript/)
+* [javaScript](https://developer.mozilla.org/de/docs/Web/JavaScript/) 
 
 
 
