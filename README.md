@@ -22,7 +22,7 @@ https://user-images.githubusercontent.com/57542570/154725932-54677416-935e-4ea2-
 
 I have used Gulp and a Sass Boilerplate for this Project. <br><br>
 I exchanged @import for @use and @forward and I also <br>
-went more into Sass featuresand replaced media querys with reusable variables. <br><br>
+went more into Sass featuresand replaced media querys with reusable variables. <br> <br>
 
 ![Setup](https://user-images.githubusercontent.com/57542570/154727579-77815ed9-2f64-4129-a28b-14e9004c5b7b.png)
 
